@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+; Machine-wide registration. Assumes DeleteDuplicates.exe has already been
+; copied to C:\Program Files\DeleteDuplicates. Requires administrator rights.
+; Install.ps1 does both steps and is the preferred route.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\Background\shell\DeleteDuplicates]
+"MUIVerb"="Delete duplicates"
+"Icon"="C:\\Program Files\\DeleteDuplicates\\DeleteDuplicates.exe,0"
+"Position"="Bottom"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\Background\shell\DeleteDuplicates\command]
+@="\"C:\\Program Files\\DeleteDuplicates\\DeleteDuplicates.exe\" \"%V\""

@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+; Removes the machine-wide verb. Delete C:\Program Files\DeleteDuplicates
+; afterwards. For a per-user install, remove the HKCU key instead.
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\Background\shell\DeleteDuplicates]
+
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\DeleteDuplicates]
